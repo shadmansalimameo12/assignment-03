@@ -22,14 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
-    <!-- daisy ui CDN -->
+    <!-- daisy ui and Tailwind CDN -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind CDN -->
     
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <!-- Styles -->
      <style>
@@ -41,6 +39,20 @@
             font-family: 'ADLaM Display', sans-serif;
         }
      </style>
+
+     <!-- Custom CDN -->
+
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
 
 </head>

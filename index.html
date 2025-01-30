@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -27,47 +27,104 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
+
 
     <!-- Styles -->
-     <style>
-        .sora-font{
+    <style>
+        .sora-font {
             font-family: 'Sora', sans-serif;
         }
 
-        .adlam-font{
+        .adlam-font {
             font-family: 'ADLaM Display', sans-serif;
         }
-     </style>
+    </style>
 
-     <!-- Custom CDN -->
+    <!-- Custom CDN -->
 
-     <script>
+    <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 
 </head>
 
 <body class="sora-font">
-     <!-- header section -->
-      <header>
-        
-      </header>
+    <!-- header section -->
+    <header>
+        <!-- navbar start -->
+        <div class="navbar bg-[#FFF9F4] px-20 ">
+            <div class="navbar-start">
+                <div class="dropdown">
 
-      <!-- main section -->
-       <main></main>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
 
-       <!-- footer section -->
-         <footer></footer>
+                </div>
+                <div class="w-10">
+                    <img src="./c1-assets/logo-header.png" alt="">
+                </div>
+
+                <div class="hidden sm:block">
+                    <a class="btn btn-ghost text-xl ">
+                        Browse
+                        <span class="text-yellow-300 ">4</span>
+                        Pets
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet </a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden sm:block ">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass mx-5"></i>
+                </div>
+                <div class="hidden sm:block ">
+                    
+                    <a class="btn btn-outline border-yellow-400 text-black">Login</a>
+                    <a class="btn btn-warning ml-2">Register</a>
+                </div>
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- navbar ends -->
+
+
+
+
+
+
+    </header>
+
+    <!-- main section -->
+    <main></main>
+
+    <!-- footer section -->
+    <footer></footer>
 
 </body>
 
